@@ -8,6 +8,9 @@ class Tutorx(models.Model):
     Edad = models.IntegerField()
     nombre_mascota = models.CharField(max_length=50)
 
+def _str_(self) -> str:
+    return self.Nombre+""+str(self.Tutorx)
+
 class Mascota(models.Model):
     Nombre = models.CharField(max_length=50)
     Nombre_tutorx = models.CharField(max_length=50)

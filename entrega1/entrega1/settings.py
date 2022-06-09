@@ -55,7 +55,7 @@ ROOT_URLCONF = 'entrega1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/User/OneDrive/Documentos/DJANGO/Entrega_Lucero/entrega1/entregalucero/Templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
