@@ -1,0 +1,14 @@
+{% extends "entregalucero/padre.html" %}
+{% load static %}
+{% block section_name %}
+<h3>Formulario de mi Vete</h3>
+{% endblock %}
+{% block contenidoQueCambia %}
+<form action="{%  url 'mascotasformulario' %}" method="POST">{% csrf_token %}
+    <h1>Ingrese los datos con respecto a su Mascota</h1>
+    <table>
+        {{miFormulario.as_table}}
+    </table>
+    <input type="submit" value="Enviar Formulario hecho con la API">
+</form>
+{% endblock %}

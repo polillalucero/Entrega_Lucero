@@ -1,0 +1,12 @@
+{% extends "entregalucero/padre.html" %}
+{% load static %}
+{% block section_name %}
+<h3>Buscador de Tutorx</h3>
+{% endblock %}
+{% block contenidoQueCambia %}
+<form action="{%  url 'buscar' %}" method="GET">
+    <h1>Busque datos del tutorx</h1>
+    <input type = "text" name= "tutorx">
+    <input type="submit" value="Buscar">
+</form>
+{% endblock %}
